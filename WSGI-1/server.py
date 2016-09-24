@@ -26,7 +26,7 @@ def application(environ, start_response):
     return '<h1>Hello, %s!</h1>' % (str_info or 'chp')
 
 # 创建服务器
-httpd = make_server('', 8000, application)
-print "Serving HTTP on port 8000..."
+httpd = make_server('', 8888, application)
+print "Serving HTTP on port 8888..."
 # 监听
 httpd.serve_forever()
